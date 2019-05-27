@@ -8,7 +8,7 @@
 <p>new_portfolio_path: <%= new_portfolio_path %></p>
 
 <% @portfolio_items.each do |item| %>
-  <p><h3><%= link_to item.title, portfolio_path(item) %></h3></p>
+  <p><h3><%= link_to item.title, portfolio_show_path(item) %></h3></p>
   <p><%= item.subtitle %></p>
   <p><%= item.body %></p>
   <p>
